@@ -7,7 +7,7 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 */
 
-package arrays;
+package two_pointers;
 
 public class RemoveDuplicates{
     public static int removeDuplicates(int[] nums){
