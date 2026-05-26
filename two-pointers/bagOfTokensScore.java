@@ -1,11 +1,23 @@
+/*
+Problem: Bag of Tokens
+Platform: LeetCode 
+Approach: Greedy + Two Pointers
+
+Time Complexity: O(n log n)
+Space Complexity: O(1)
+*/
+
 import java.util.Arrays;
+
 class Solution {
+    
     public int bagOfTokensScore(int[] tokens, int power) {
         Arrays.sort(tokens);
         int left = 0;
         int right = tokens.length - 1;
         int score = 0;
         int maxScore = 0;
+        
         while (left <= right) {
             if (power >= tokens[left]) {
                 power -= tokens[left];
@@ -13,6 +25,7 @@ class Solution {
                 maxScore = Math.max(maxScore, score);
                 left++;
             }
+                
             else if (score > 0) {
                 power += tokens[right];
                 score--;
