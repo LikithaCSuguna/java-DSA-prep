@@ -18,7 +18,6 @@ class MaximumCircularSubarraySum {
 
         int currMax = 0;
         int maxSum = nums[0];
-
         int currMin = 0;
         int minSum = nums[0];
 
