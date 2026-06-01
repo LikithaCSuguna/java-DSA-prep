@@ -6,6 +6,7 @@ Approach: XOR of all characters
 Time Complexity: O(n)
 Space Complexity: O(1)
 */
+
 class Solution {
     public char findTheDifference(String s, String t) {
         char c = 0;
