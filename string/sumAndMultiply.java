@@ -7,6 +7,7 @@ Time Complexity: O(d)
 Space Complexity: O(d)
 */
 
+
 class Solution {
 public:
     long long sumAndMultiply(int n) {
