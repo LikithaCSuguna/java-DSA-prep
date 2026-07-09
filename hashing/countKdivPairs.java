@@ -2,6 +2,7 @@
 
 Problem: Count Pairs Divisible By K 
 Approach: Hashing 
+Platform: GeeksforGeeks 
 
 Time Complexity: O(n)
 Space Complexity: O(k)
