@@ -8,6 +8,7 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 
 */
+
 class Solution {
     private boolean isVowel(char ch){
         return ch == 'a' || ch == 'e' || ch == 'i'  || ch == 'o' || ch == 'u';
