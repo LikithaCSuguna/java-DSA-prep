@@ -1,0 +1,29 @@
+/*
+
+Problem: Contains Duplicate II
+Platform: LeetCode 219
+Pattern: Sliding Window + HashSet
+
+Time Complexity: O(n)
+Space Complexity: O(min(n, k))
+
+*/
+
+import java.util.HashSet;
+class Solution {
+    public boolean containsNearbyDuplicate(int[] nums, int k) {
+        HashSet<Integer> window = new HashSet<>();
+        for (int i = 0; i < nums.length; i++) {
+
+            if (window.contains(nums[i])) {
+                return true;
+            }
+            window.add(nums[i]);
+
+            if (window.size() > k) {
+                window.remove(nums[i - k]);
+            }
+        }
+        return false;
+    }
+}
